@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pariwisata Jember</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+            <div class="logo">
+                
+            </div>
+            <a class="navres">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="destinasi.html">Destinasi</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="search-box">
+                <input class="search-text" type="text" name="" placeholder="telusuri">
+                <a class="search-btn" href="#">
+                    <img src="icon/search-btn.png" width=20px>
+                </a>
+            </div>
+    </div>
+    <div id="slider"></div>
+    <div class="ttg">
+		<center>
+            <h1 style="color: #f79c00;"><center>Tentang Pariwisata Jember</center></h1>
+            <p style="color: black">
+                Pariwisata Jember adalah portal yang menyajikan informasi tentang tempat wisata di Jember, pesona keindahan alam jember. Jember menyimpan sejuta kekayaan alam yang begitu indahnya,sehingga perlu diangkat ke publik. <br><br>
+            </p>
+        </center>	
+    </div>
+    <div class="des-table">
+        <div class="col">
+            <div class="table">
+                <img src="Gambar/niagara.jpg" width="100%">
+                <h2>Pemandian Niagara</h2>
+                <ul>
+                    <li>Weekday : Rp 15.000,-/orang</li>
+                    <li>Weekend : Rp 20.000,-/orang</li>
+                </ul>
+                <a href="#">Lihat</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="table">
+                <img src="Gambar/botani.jpg" width="100%">
+                <h2>Taman Botani</h2>
+                <ul>
+                    <li>Weekday : Rp 12.000,-/orang</li>
+                    <li>Weekend : Rp 20.000,-/orang</li>
+                </ul>
+                <a href="#">Lihat</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="table">
+                <img src="Gambar/rembangan.jpg" width="100%">
+                <h2>Pemandian Rembangan</h2>
+                <ul>
+                    <li>Rp 5.500,-/orang</li>
+                    <li></li>
+                </ul>
+                <a href="#">Lihat</a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="table">
+                <img src="Gambar/gambir.jpg" width="100%">
+                <h2>Gunung Gambir</h2>
+                <ul>
+                    <li>Rp 0,-/orang</li>
+                    <li></li>
+                </ul>
+                <a href="#">Lihat</a>
+            </div>
+        </div>
+    </div>
+    <div class="gal">
+        <img src="Gambar/niagara.jpg" width=20% height=184px style="margin:0"><img src="Gambar/botani.jpg" width=20% height=184px style="margin:0"><img src="Gambar/rembangan.jpg" width=20% height=184px style="margin:0"><img src="Gambar/gambir.jpg" width=20% height=184px style="margin:0"><img src="Gambar/tancak.png" width=20% height=184px style="margin:0">
+    </div>
+    <div class="show">
+        <div class="overlay"></div>
+        <div class="img-show">
+            <span>X</span>
+            <img src="">
+        </div>
+    </div>
+    <div style="background-color:#016aae; color:azure; padding: 15px 0;margin: 0">
+        <center>
+            Copyright 2018 <b>Pariwisata Jember</b> site by AndiSr
+        </center>
+    </div>
+    
+    <script type="text/javascript">
+        $(".navres").on("click",function(){
+          $('.menu').toggleClass("show-nav");
+        });
+
+        $(".gal img").click(function () {
+            var $src = $(this).attr("src");
+            $(".show").fadeIn();
+            $(".img-show img").attr("src", $src);
+        });
+
+        $("span, .overlay").click(function () {
+            $(".show").fadeOut();
+        }); 
+    </script>
+</body>
+</html>

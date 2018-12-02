@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+            <div class="logo">
+                
+            </div>
+            <a class="navres">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="destinasi.html">Destinasi</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="search-box">
+                <input class="search-text" type="text" name="" placeholder="telusuri">
+                <a class="search-btn" href="#">
+                    <img src="icon/search-btn.png" width=20px>
+                </a>
+            </div>
+    </div>
+
+    
+    <div class="abt">
+        <div class="logo-bot-abt">
+           <center><img src="Gambar/icon2.png"></center> 
+        </div>
+        <div class="ctn-abt">
+            <center>
+                <h2 style="color: grey;"><center>Tentang Pariwisata Jember</center></h2>
+                <p style="color: grey">
+                    Pariwisata Jember adalah portal yang menyajikan informasi tentang tempat wisata di Jember, pesona keindahan alam jember. Jember menyimpan sejuta kekayaan alam yang begitu indahnya,sehingga perlu diangkat ke publik. <br><br>
+                    Ada banyak jenis wisata yang akan Anda eksplorasi di sini mulai dari wisata pantai, pegunungan, hutan, pemandian, dan air terjun. <br><br>
+                    EMAIL KAMI : iduel080614@gmail.com
+                </p>
+            </center>
+        </div>
+    </div>
+
+    <div class="credit">
+        <div class="tentang">
+			<div>	
+				<h3> Tentang kami</h3>
+				<p style="color: grey">
+					Info Pariwisata Jember memberikan informasi tentang pariwisata yang ada di Jember. Meliputi pantai, pegunungan, hutan, pemandian, dan air terjun.<br>
+				</p>
+			</div>
+			<div style="color: grey">	
+				<img src="icon/facebook-placeholder-for-locate-places-on-maps.png" width=30>
+				<p  style="display: inline-block;">
+					Jl. Nias 3 No.7 Tegal boto lor, Sumbersari,	Jember, Jawa timur
+				</p>
+			</div>
+			<div style="color: grey">	
+				<img src="icon/whatsapp-logo.png" width=30>
+				<p  style="display: inline-block;">
+					082 331 861 711<br>
+					083 847 463 483<br>
+				</p>
+			</div>
+			<div style="color: grey">
+				<img src="icon/instagram-logo.png" width=30>
+				<p  style="display: inline-block;">
+						@andial98 <br>	
+						@prima
+				</p>
+			</div>
+		</div>
+        <div class="map">
+            <h3>Peta Lokasi</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.3255754400583!2d113.71092882916358!3d-8.172268999632369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMTAnMjAuMiJTIDExM8KwNDInNDEuMyJF!5e0!3m2!1sid!2sid!4v1543075371382" width="200" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="link">
+            <h3>Link-link</h3>
+            <a href="index.html">Home</a><br><br>
+            <a href="destinasi.html">Destination</a><br><br>
+            <a href="gallery.html">Gallery</a><br><br>
+            <a href="contactUs.html">Contact Us</a><br><br>
+            <a href="about.html">About</a><br><br>
+        </div>
+    </div>
+    <div class="cpr">
+        <center>
+            Copyright 2018 <b>Pariwisata Jember</b> site by AndiSr
+        </center>
+    </div>
+
+    <script type="text/javascript">
+        $(".navres").on("click",function(){
+          $('.menu').toggleClass("show-nav");
+        });
+
+        $(".gal img").click(function () {
+            var $src = $(this).attr("src");
+            $(".show").fadeIn();
+            $(".img-show img").attr("src", $src);
+        });
+
+        $("span, .overlay").click(function () {
+            $(".show").fadeOut();
+        }); 
+    </script>
+
+</body>
+</html>
