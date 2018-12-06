@@ -488,6 +488,9 @@ body{
     }
 }
 @media only screen and (min-width : 601px) and (max-width : 1124px){
+    .gbr-gallery{
+        margin-top: 205;
+    }
     .des-table-destinasi{
         top:250px;
     }
