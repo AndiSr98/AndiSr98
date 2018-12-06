@@ -146,6 +146,7 @@ body{
     flex-wrap: wrap;
 }
 .des-table-destinasi{
+    top:150px;
     position: relative;
     z-index: 10;
     max-width: 1500px;
@@ -326,7 +327,6 @@ body{
 }
 .logo-bot{
     padding: 0 5%;
-    background-image: url("Gambar/icon2.png");
     width: 25%;
     background-repeat: no-repeat;
 }
@@ -488,7 +488,9 @@ body{
     }
 }
 @media only screen and (min-width : 601px) and (max-width : 1124px){
-    
+    .des-table-destinasi{
+        top:250px;
+    }
     .table-src a{
         width: 50%;
     }
